@@ -1,0 +1,4 @@
+Sitemap: http://pa1ko.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: pa1ko.github.io
