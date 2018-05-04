@@ -4,3 +4,4 @@ watchdog
 webassets
 ghp-import2
 jinja2
+notebook
