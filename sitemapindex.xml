@@ -6,15 +6,15 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://pa1ko.github.io/galleries/rss.xml</loc>
-  <lastmod>2017-01-07T15:57:00Z</lastmod>
+  <loc>https://pkonarzewski.github.io/galleries/rss.xml</loc>
+  <lastmod>2018-05-04T07:40:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pa1ko.github.io/rss.xml</loc>
-  <lastmod>2017-01-07T15:57:00Z</lastmod>
+  <loc>https://pkonarzewski.github.io/rss.xml</loc>
+  <lastmod>2018-05-04T07:40:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://pa1ko.github.io/sitemap.xml</loc>
-  <lastmod>2017-01-07T15:57:00Z</lastmod>
+  <loc>https://pkonarzewski.github.io/sitemap.xml</loc>
+  <lastmod>2018-05-04T07:40:00Z</lastmod>
  </sitemap>
 </sitemapindex>
