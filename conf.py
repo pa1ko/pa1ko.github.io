@@ -1170,8 +1170,15 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Or a DuckDuckGo search: https://duckduckgo.com/search_box.html
 # Default is no search form.
 # (translatable)
-# SEARCH_FORM = ""
-#
+SEARCH_FORM = """
+<form class="navbar-form navbar-left" action="/pages/search/" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="Search" autocomplete="off">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+"""
+
 # This search form works for any site and looks good in the "site" theme where
 # it appears on the navigation bar:
 #
@@ -1222,7 +1229,9 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-# EXTRA_HEAD_DATA = ""
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
+"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
