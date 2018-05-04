@@ -3,3 +3,4 @@ ws4py
 watchdog
 webassets
 ghp-import2
+jinja2
