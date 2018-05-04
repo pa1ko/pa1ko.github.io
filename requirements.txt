@@ -1,3 +1,4 @@
 nikola[extra]
 ws4py
 watchdog
+webassets
