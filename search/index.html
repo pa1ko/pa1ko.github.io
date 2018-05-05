@@ -2,16 +2,15 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="pl">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="listings">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>listings | Snippets Box</title>
+<title>Search | Snippets Box</title>
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="https://pkonarzewski.github.io/listings/">
+<link rel="canonical" href="https://pkonarzewski.github.io/search/">
 <link rel="icon" href="../favicon.ico" sizes="16x16">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../assets/css/tipuesearch.css">
 </head>
@@ -48,7 +47,7 @@
                 
             </li>
 </ul>
-<form class="navbar-form navbar-right" action="../search/" role="search">
+<form class="navbar-form navbar-right" action="." role="search">
     <div class="form-group">
         <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="" autocomplete="off">
 </div>
@@ -67,11 +66,11 @@
         <div class="row">
             
             
+<h1>Search</h1>
+<noscript>Search requires JavaScript, sorry for the inconvenience.</noscript>
+<div id="tipue_search_content">Use the search box in the navigation bar to search.</div>
 
-<nav class="breadcrumbs"><ul class="breadcrumb">
-<li><a href=".">listings</a></li>
-</ul></nav>
-</div>
+        </div>
         <!--End of body content-->
 
         <footer id="footer">
@@ -85,6 +84,14 @@
             <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/colorbox-i18n/jquery.colorbox-pl.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("pl");
     fancydates(2, "YYYY-MM-DD");
-    </script><!-- end fancy dates -->
+    </script><!-- end fancy dates --><script src="../assets/js/tipuesearch_set.js"></script><script src="../assets/js/tipuesearch.js"></script><script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        'mode': 'json',
+        'contentLocation': '/assets/js/tipuesearch_content.json',
+        'showUrl': false
+    });
+});
+</script>
 </body>
 </html>

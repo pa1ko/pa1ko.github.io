@@ -1,16 +1,30 @@
-div.prompt {
-  padding: 0.6em;
-  font-size: 13px;
-  background-color: #E9E9E9;
-  margin-right: 1em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+table{
+  margin: 1em;
 }
 
-div.output_prompt {
-  /* 5px right shift to account for margin in parent container */
-  margin: 0 5px 0 0px;
+table,tr,th,td{
+  border:1px solid black;
+  border-collapse:collapse;
+  padding: 5px;
+  font-size: .95em;
+}
+
+td, th{
+  text-align:left;
+  vertical-align:middle;
+  word-break:break-all;
+}
+
+th{
+  font-weight:bold;
+}
+
+div.prompt {
+  display: none;
+}
+
+div.container :focus {
+  outline: none;
 }
 
 div.output_area pre {

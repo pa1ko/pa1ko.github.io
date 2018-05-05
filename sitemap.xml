@@ -7,22 +7,58 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://pkonarzewski.github.io/</loc>
-  <lastmod>2018-05-04T07:40:00Z</lastmod>
+  <lastmod>2018-05-05T16:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/2018/</loc>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/archive.html</loc>
-  <lastmod>2018-05-04T07:40:00Z</lastmod>
+  <lastmod>2018-05-05T16:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/blog/</loc>
+  <lastmod>2018-05-05T16:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/blog/test/</loc>
+  <lastmod>2018-05-05T16:27:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/blog/witajcie/</loc>
+  <lastmod>2018-05-05T16:26:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/</loc>
-  <lastmod>2018-05-04T07:40:00Z</lastmod>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/categories/python/</loc>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/galleries/</loc>
-  <lastmod>2018-05-04T07:40:00Z</lastmod>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/index-blog/</loc>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/listings/</loc>
-  <lastmod>2018-05-04T07:40:00Z</lastmod>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/search/</loc>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/snippets/</loc>
+  <lastmod>2018-05-05T16:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/snippets/work-work/</loc>
+  <lastmod>2018-05-05T16:03:00Z</lastmod>
  </url>
 </urlset>
