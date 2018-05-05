@@ -1,0 +1,62 @@
+<!--
+.. title: SnippetsBox
+.. slug: index
+.. date: 2018-05-04 15:20:35 UTC+02:00
+.. tags:
+.. category:
+.. link:
+.. description:
+.. type: text
+.. hidetitle: True
+-->
+
+<style type="text/css">
+    ul {
+        list-style-type: disc;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        list-style-position: inside;
+    }
+</style>
+
+
+<h2>Snippets Box</h2>
+Moje pudełko skrawków (kodu).
+
+<h3>Blog</h3>
+<div class="panel panel-default">
+    <div class="panel-body">
+        {{% post-list sections=blog stop=6 %}}{{% /post-list %}}
+        <a href="blog">Pozostałe wpisy...</a>
+    </div>
+</div>
+
+<!-- LISTA SKRAWKOW ======================================================== -->
+<h3>Lista skrawków</h3>
+<hr>
+
+<!-- PYTHON -->
+<h3>Python</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">Podstawy</div>
+    <div class="panel-body">
+        {{% post-list sections=snippets template=snippets_list.tmpl tags=python %}}{{% /post-list %}}
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Pandas</div>
+    <div class="panel-body">
+        {{% post-list sections=snippets tags=pandas %}}{{% /post-list %}}
+    </div>
+</div>
+
+<!-- LINUX -->
+<h3>Linux</h3>
+<div class="panel panel-default">
+    <div class="panel-heading">Podstawy</div>
+    <div class="panel-body">
+        {{% post-list sections=snippets tags=linux %}}{{% /post-list %}}
+    </div>
+</div>
