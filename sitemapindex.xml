@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://pkonarzewski.github.io/blog/rss.xml</loc>
-  <lastmod>2018-05-05T16:27:00Z</lastmod>
+  <lastmod>2018-05-05T16:33:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/python.xml</loc>
@@ -19,11 +19,11 @@
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/rss.xml</loc>
-  <lastmod>2018-05-05T16:27:00Z</lastmod>
+  <lastmod>2018-05-05T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/sitemap.xml</loc>
-  <lastmod>2018-05-05T16:27:00Z</lastmod>
+  <lastmod>2018-05-05T16:35:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/snippets/rss.xml</loc>

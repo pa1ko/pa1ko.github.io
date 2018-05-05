@@ -7,14 +7,8 @@
       "url": "https://pkonarzewski.github.io/blog/witajcie/"
     },
     {
-      "title": "work work",
-      "text": "Tu wpisz tre\u015b\u0107 postu.\n\n\n\n\n\n\nIn\u00a0[1]:\n\n    \nimport pandas as pd\n\n\n\n\n\n\n\n\n\nIn\u00a0[2]:\n\n    \npd.DataFrame({'a': [1,2,3,], 'b':[2,3,4]})\n\n\n\n\n\n\n\n\n\n\n\n\nOut[2]:\n\n\n\n\n\n\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n\n\n  \n    \n      \n      a\n      b\n    \n  \n  \n    \n      0\n      1\n      2\n    \n    \n      1\n      2\n      3\n    \n    \n      2\n      3\n      4",
-      "tags": "python",
-      "url": "https://pkonarzewski.github.io/snippets/work-work/"
-    },
-    {
       "title": "SnippetsBox",
-      "text": "ul {\n        list-style-type: disc;\n        -webkit-columns: 2;\n        -moz-columns: 2;\n        columns: 2;\n        list-style-position: inside;\n    }\n\n\n\nSnippets Box\nMoje pude\u0142ko skrawk\u00f3w (kodu).\n\nBlog\n\n    \n        \n\n\n    \n            \n            2018-05-05\n            \u00a0\n            Witajcie\n            \n    \n\n\n\n\n        Pozosta\u0142e wpisy...\n    \n\n\n\nLista skrawk\u00f3w\n\n\n\nPython\n\n    Podstawy\n    \n        \n\n\n    \n            \n            work work\n            \n    \n\n\n\n\n    \n\n\n\n    Pandas\n    \n        \n    \n\n\n\nLinux\n\n    Podstawy",
+      "text": "ul {\n        list-style-type: disc;\n        -webkit-columns: 2;\n        -moz-columns: 2;\n        columns: 2;\n        list-style-position: inside;\n    }\n\n\n\nSnippets Box\nMoje pude\u0142ko skrawk\u00f3w (kodu).\n\nBlog\n\n    \n        \n\n\n    \n            \n            2018-05-05\n            \u00a0\n            Witajcie\n            \n    \n\n\n\n\n        Pozosta\u0142e wpisy...\n    \n\n\n\nLista skrawk\u00f3w\n\n\n\nPython\n\n    Podstawy\n    \n        \n    \n\n\n\n    Pandas\n    \n        \n    \n\n\n\nLinux\n\n    Podstawy",
       "tags": "",
       "url": "https://pkonarzewski.github.io/"
     },
