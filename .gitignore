@@ -1,5 +1,7 @@
-.venv
-.svenv
+.env/
+.venv/
+.senv/
+.svenv/
 
 .vscode
 
