@@ -1,7 +1,3 @@
-nikola[extra]
+nikola[full]==8.0.2
 ws4py
-watchdog
 webassets
-ghp-import2
-jinja2
-notebook
