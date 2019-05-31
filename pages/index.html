@@ -12,7 +12,7 @@
 
 <style type="text/css">
     ul {
-        list-style-type: disc;
+        list-style-type: square;
         -webkit-columns: 2;
         -moz-columns: 2;
         columns: 2;
@@ -21,42 +21,44 @@
 </style>
 
 
-<h2>Snippets Box</h2>
-Moje pudełko skrawków (kodu).
+<p class="lead">Moje pudełko skrawków kodów.</p>
 
-<h3>Blog</h3>
-<div class="panel panel-default">
-    <div class="panel-body">
-        {{% post-list sections=blog stop=6 %}}{{% /post-list %}}
-        <a href="blog">Pozostałe wpisy...</a>
+<div class="card">
+    <div class="card-body">
+            <h5>Blog</h5>
+            {{% post_list categories=blog stop=6 %}}{{% /post_list %}}
     </div>
 </div>
+<a href="blog">Pozostałe wpisy...</a>
 
 <!-- LISTA SKRAWKOW ======================================================== -->
-<h3>Lista skrawków</h3>
+<h3 class="mt-5">Lista skrawków</h3>
 <hr>
 
 <!-- PYTHON -->
-<h3>Python</h3>
-<div class="panel panel-default">
-    <div class="panel-heading">Podstawy</div>
-    <div class="panel-body">
-        {{% post-list sections=snippets template=snippets_list.tmpl tags=python %}}{{% /post-list %}}
+<h4 class="mt-4">Python</h4>
+
+<div class="card mt-3">
+    <h5 class="card-header">Podstawy</h5>
+    <div class="card-body">
+        {{% post_list categories=snippet template=snippets_list.tmpl tags=python %}}{{% /post_list %}}
     </div>
 </div>
 
-<div class="panel panel-default">
-    <div class="panel-heading">Pandas</div>
-    <div class="panel-body">
-        {{% post-list sections=snippets template=snippets_list.tmpl tags=pandas %}}{{% /post-list %}}
+<div class="card mt-3">
+    <h5 class="card-header">Pandas</h5>
+    <div class="card-body">
+        {{% post_list categories=snippet template=snippets_list.tmpl tags=pandas %}}{{% /post_list %}}
     </div>
 </div>
+
 
 <!-- LINUX -->
-<h3>Linux</h3>
-<div class="panel panel-default">
-    <div class="panel-heading">Podstawy</div>
-    <div class="panel-body">
-        {{% post-list sections=snippets template=snippets_list.tmpl tags=linux %}}{{% /post-list %}}
+<h4 class="mt-4">Linux</h4>
+
+<div class="card mt-3">
+    <h5 class="card-header">Podstawy</h5>
+    <div class="card-body">
+        {{% post_list categories=snippet template=snippets_list.tmpl tags=linux %}}{{% /post_list %}}
     </div>
 </div>

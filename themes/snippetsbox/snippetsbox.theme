@@ -1,4 +1,3 @@
 [Theme]
-engine = mako
-parent = bootstrap3
-
+engine = jinja
+parent = bootblog4-jinja

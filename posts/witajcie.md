@@ -3,7 +3,7 @@
 .. slug: witajcie
 .. date: 2018-05-05 18:26:35 UTC+02:00
 .. tags:
-.. category:
+.. category: blog
 .. link:
 .. description:
 .. type: text
