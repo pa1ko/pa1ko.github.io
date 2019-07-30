@@ -19,7 +19,7 @@ OAuth 2.0 to otwarty standard autoryzacji, wykorzystywany między innymi przez G
 * Scope (zakres) - zakres uprawnień
 * Authorization server (serwer autoryzacji) - aplikacja zarządzająca przydzielaniem kluczy, tokenów i kodów dostępu. Kontroluje prawidłowe przydzielanie uprawnień
 * Resource server (serwer zasobów) - aplikacja lub serwer, do którego dostęp chce uzyskać klient.
-* Authorization code () - pośredni token
+* Authorization code () - pośredni token, jest wymieniany na prawdziwy token
 * client id (identyfikator) - identyfikator przyznawany przy rejestracji, jest informacją publiczną
 * Client secret (sekret) - sekret jest informacją niejawną i musi być chronione.
 * Redirect URIs () - serwis przekierowywuje
@@ -36,6 +36,7 @@ Wyróżniane są 4 podstawowe metody autoryzacji.
 
 ##### Odwołania
 
-* [sekurak.pl](https://sekurak.pl/oauth-2-0-jak-dziala-jak-testowac-problemy-bezpieczenstwa/)
-* [adam.wroclaw.pl](http://adam.wroclaw.pl/2014/10/oauth2-wyjasniony-po-ludzku/)
 * [aaronparecki.com](https://aaronparecki.com/oauth-2-simplified/)
+* [adam.wroclaw.pl](http://adam.wroclaw.pl/2014/10/oauth2-wyjasniony-po-ludzku/)
+* [sekurak.pl](https://sekurak.pl/oauth-2-0-jak-dziala-jak-testowac-problemy-bezpieczenstwa/)
+* [thephpleague.com](https://oauth2.thephpleague.com/terminology/)
