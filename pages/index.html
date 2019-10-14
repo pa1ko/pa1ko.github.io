@@ -25,8 +25,8 @@
 
 <div class="card">
     <div class="card-body">
-            <h5>Blog</h5>
-            {{% post_list categories=blog stop=6 %}}{{% /post_list %}}
+        <h5>Blog</h5>
+        {{% post_list categories=blog stop=6 %}}{{% /post_list %}}
     </div>
 </div>
 <a href="blog">Pozostałe wpisy...</a>
@@ -60,5 +60,16 @@
     <h5 class="card-header">Podstawy</h5>
     <div class="card-body">
         {{% post_list categories=snippet template=snippets_list.tmpl tags=linux %}}{{% /post_list %}}
+    </div>
+</div>
+
+
+<!-- ALGORYTMY -->
+<h4 class="mt-4">Algorytmy</h4>
+
+<div class="card mt-3">
+    <h5 class="card-header">Podstawy</h5>
+    <div class="card-body">
+        {{% post_list categories=snippet template=snippets_list.tmpl tags=algorithm %}}{{% /post_list %}}
     </div>
 </div>
