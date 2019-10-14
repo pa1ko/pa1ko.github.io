@@ -15,34 +15,42 @@ nikola plugin -i localsearch
 
 ### Installation of snippets kernel
 
+1. Python kernel:
+
 ```bash
 virtualenv .senv
 activate
 pip install -r snippets_requirements.txt
-ipython kernel install --user --name snippetpy3 --display-name "Snippets (Py3)"
+ipython kernel install --user --name snippets_py --display-name "snippets[py]"
 ```
 
 ### Upgrading to newer version
 
+1. Run command
+
 ```bash
 pip install --upgrade -r requirements.txt
-rm conf.py
+mv conf.py conf_old.py
 nikola init
 ```
 
-Go with default settings and then merge diff conf.py.
+2. Then use any diff tool on *conf.py* and *conf_old.py* and incorporate changes.
 
 ## Workflow
 
 ### Start server
 
-`nikola`
+`nikola build` then `nikola serve` or just use `nikola auto`.
 
 ### Create snippet
 
-`nikola new_post`
+1. Run: `nikola new_post -f ipynb -t {{ title }} --tags={{section tag}}`
+1. If there is new tag, name should be in english and in single form, also remember updating *pages/index.html*
+1. Set snippet category to "*snippet*"
+1. Run jupyter using *jupyter_start.bat*
+1. Change jupyter kernel of snippet to "*snippets[{{ kernel language }}]*"
 
 ### How to deploy
 
-Auto deploy with Travis ci
-`nikola`
+Auto deploy set with Travis CI
+`nikola deploy`
