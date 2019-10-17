@@ -10,3 +10,5 @@ __pycache__
 .cache
 .output
 *-checkpoint.ipynb
+
+.doit.db
