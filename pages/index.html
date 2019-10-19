@@ -23,13 +23,16 @@
 
 <p class="lead">Moje pudełko skrawków kodów.</p>
 
+<!-- BLOG           ======================================================== -->
 <div class="card">
     <div class="card-body">
         <h5>Blog</h5>
         {{% post_list categories=blog stop=6 %}}{{% /post_list %}}
+        <a href="blog">Pozostałe wpisy...</a>
     </div>
+
 </div>
-<a href="blog">Pozostałe wpisy...</a>
+
 
 <!-- LISTA SKRAWKOW ======================================================== -->
 <h3 class="mt-5">Lista skrawków</h3>
@@ -52,6 +55,12 @@
     </div>
 </div>
 
+<div class="card mt-3">
+    <h5 class="card-header">Jupyter</h5>
+    <div class="card-body">
+        {{% post_list categories=snippet template=snippets_list.tmpl tags=jupyter %}}{{% /post_list %}}
+    </div>
+</div>
 
 <!-- LINUX -->
 <h4 class="mt-4">Linux</h4>

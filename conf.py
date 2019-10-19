@@ -216,11 +216,12 @@ THEME_CONFIG = {
 #     )
 
 POSTS = (
-    ("posts/*.rst", "blog", "post.tmpl"),
-    ("posts/*.md", "blog", "post.tmpl"),
-    ("posts/*.txt", "blog", "post.tmpl"),
-    ("posts/*.html", "blog", "post.tmpl"),
+    ("posts/blog/*.rst", "blog", "post.tmpl"),
+    ("posts/blog/*.md", "blog", "post.tmpl"),
+    ("posts/blog/*.txt", "blog", "post.tmpl"),
+    ("posts/blog/*.html", "blog", "post.tmpl"),
     ("posts/snippets/*.ipynb", "snippets", "snippet.tmpl"),
+    ("posts/snippets/*.md", "snippets", "snippet.tmpl"),
 )
 PAGES = (
     ("pages/*.html", "", "page.tmpl"),
