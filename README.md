@@ -44,7 +44,7 @@ nikola init
 
 ### Create snippet
 
-1. Run: `nikola new_post -f ipynb -t {{ title }} --tags={{section tag}}`
+1. Run: `nikola new_post -f ipynb -t "{{ title }}" --tags={{section tag}}`
 1. If there is new tag, name should be in english and in single form, also remember updating *pages/index.html*
 1. Set snippet category to "*snippet*"
 1. Run jupyter using *jupyter_start.bat*
