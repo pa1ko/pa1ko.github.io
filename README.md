@@ -53,4 +53,4 @@ nikola init
 ### How to deploy
 
 Auto deploy set with Travis CI
-`nikola deploy`
+`nikola github_deploy`
