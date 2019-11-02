@@ -1,0 +1,14 @@
+.env/
+.venv/
+.senv/
+.svenv/
+
+.vscode
+
+__pycache__
+.doit.db.*
+.cache
+.output
+*-checkpoint.ipynb
+
+.doit.db
