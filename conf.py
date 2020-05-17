@@ -1146,8 +1146,8 @@ COPY_SOURCES = False
 # Default is no search form.
 # (translatable)
 SEARCH_FORM = """
-<form class="form-inline" action="/search/" role="search">
-        <input class="form-control mr-sm-2" type="search" id="tipue_search_input" name="q" placeholder="szukaj..." aria-label="szukaj..." autocomplete="off">
+<form class="navbar-form navbar-right" action="/search/" role="search">
+    <input type="text" class="form-control" id="tipue_search_input" name="q" placeholder="szukaj..." autocomplete="off">
 </form>
 """
 
