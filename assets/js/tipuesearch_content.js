@@ -1,9 +1,9 @@
-{
+var tipuesearch = {
   "pages": [
     {
       "title": "F-string",
       "text": "Nowa funkcjonalno\u015b\u0107 dodana w Pythonie 3.6, f-string jest nowym sposobem interpolacji string\u00f3w. U\u017cywa si\u0119 go przez dodanie f'' przed stringiem.\n\n\n\n\n\n\nIn\u00a0[14]:\n\n    \nname = 'Yukka'\nage = 56\n\nprint('Hello {name}, age: {age}')\nprint(f'Hello {name}, age: {age}')\n\n\n    \n\n\n\n\n\n\n\n\n\n    \n\n\n\nHello {name}, age: {age}\nHello Yukko, age: 56\n\n\n\n\n\n\n\n\n\n\n\nWewn\u0105trz f-string'a mo\u017cna umieszcza\u0107 wyra\u017cenia, kt\u00f3re b\u0119d\u0105 ewaluowane w czasie wywy\u0142ywania kod.\n\n\n\n\n\n\nIn\u00a0[9]:\n\n    \nf'{13 * 5}'\n\n\n    \n\n\n\n\n\n\n\n\n\n    Out[9]:\n\n\n\n\n\n'65'\n\n\n\n\n\n\n\n\n\n\nIn\u00a0[16]:\n\n    \ndef reverse(text):\n    return ''.join(reversed(text))\n\nf'{reverse(name)} olleH'\n\n\n    \n\n\n\n\n\n\n\n\n\n    Out[16]:\n\n\n\n\n\n'okkuY olleH'\n\n\n\n\n\n\n\n\n\n\nIn\u00a0[22]:\n\n    \ntext = (\n    f'Hello {name} '\n    f'your age is: {age}'\n)\n\ntext\n\n\n    \n\n\n\n\n\n\n\n\n\n    Out[22]:\n\n\n\n\n\n'Hello Yukko your age is: 56'",
-      "tags": "python",
+      "tags": "python-basics",
       "url": "https://pkonarzewski.github.io/snippets/f-string/"
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "title": "SnippetsBox",
-      "text": "ul {\n        list-style-type: square;\n        -webkit-columns: 2;\n        -moz-columns: 2;\n        columns: 2;\n        list-style-position: inside;\n    }\n\n\n\nMoje pude\u0142ko skrawk\u00f3w (kodu).\n\n\n\n    \n        Blog\n        \n\n    \n            \n            2018-05-125\n            \u00a0\n            Witajcie\n            \n    \n\n\n\n        Pozosta\u0142e wpisy...\n    \n\n\n\n\n\nLista skrawk\u00f3w\n\n\n\nPython\n\n\n    Podstawy\n    \n        \n\n    \n            Listy i s\u0142owniki sk\u0142adane w Pythonie\n    \n\n\n    \n\n\n\n    Pandas\n    \n        \n\n    \n            Wy\u015bwietl typ element\u00f3w DataFrame\n            Uzupe\u0142nianie brak\u00f3w w zakresie dat\n            Sp\u0142aszczanie indeks\u00f3w hierarchicznych (MultiIndex)\n    \n\n\n    \n\n\n\n    Jupyter\n    \n        \n\n    \n            Instalowanie nowych kerneli dla Jupytera\n    \n\n\n    \n\n\n\n\n\n\n\nStruktury danych\n\n\n    Podstawy\n    \n        \n    \n\n\n\n\nAlgorytmy\n\n\n    Podstawy",
+      "text": "ul {\n        list-style-type: square;\n        -webkit-columns: 2;\n        -moz-columns: 2;\n        columns: 2;\n        list-style-position: inside;\n    }\n\n\n\nMoje pude\u0142ko skrawk\u00f3w (kodu).\n\n\n\n    \n        Blog\n        \n\n    \n            \n            2018-05-125\n            \u00a0\n            Witajcie\n            \n    \n\n\n\n        Pozosta\u0142e wpisy...\n    \n\n\n\n\n\nLista skrawk\u00f3w\n\n\n\nPython\n\n\n    Podstawy\n    \n        \n\n    \n            F-string\n            Listy i s\u0142owniki sk\u0142adane w Pythonie\n    \n\n\n    \n\n\n\n    Pandas\n    \n        \n\n    \n            Wy\u015bwietl typ element\u00f3w DataFrame\n            Uzupe\u0142nianie brak\u00f3w w zakresie dat\n            Sp\u0142aszczanie indeks\u00f3w hierarchicznych (MultiIndex)\n    \n\n\n    \n\n\n\n    Jupyter\n    \n        \n\n    \n            Instalowanie nowych kerneli dla Jupytera\n    \n\n\n    \n\n\n\n\n\n\n\nStruktury danych\n\n\n    Podstawy\n    \n        \n    \n\n\n\n\nAlgorytmy\n\n\n    Podstawy",
       "tags": "",
       "url": "https://pkonarzewski.github.io/"
     },
@@ -55,4 +55,4 @@
       "url": "https://pkonarzewski.github.io/search/"
     }
   ]
-}
+};
