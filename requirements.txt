@@ -1,4 +1,4 @@
-nikola[full]==8.0.2
+nikola[full]==8.0.4
 ws4py
 webassets
 pylint
