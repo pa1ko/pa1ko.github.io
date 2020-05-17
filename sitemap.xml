@@ -7,74 +7,82 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://pkonarzewski.github.io/</loc>
-  <lastmod>2019-10-19T20:19:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/2018/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/2019/</loc>
-  <lastmod>2019-10-19T20:19:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/archive.html</loc>
-  <lastmod>2019-11-01T20:15:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/witajcie/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/</loc>
-  <lastmod>2019-10-19T20:19:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/cat_blog/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/cat_snippet/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/jupyter/</loc>
-  <lastmod>2019-10-19T20:19:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/pandas/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/categories/python-basics/</loc>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/python/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/search/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://pkonarzewski.github.io/snippets/f-string/</loc>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/snippets/instalowanie-ipython-kernel-dla-jupytera/</loc>
-  <lastmod>2019-10-19T20:19:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/snippets/listy-i-slowniki-skladane-w-pythonie/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/snippets/splaszczanie-indeksow-hierarchicznych-multiindex/</loc>
-  <lastmod>2019-06-01T14:33:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/snippets/uzupelnianie-brakow-w-zakresie-dat/</loc>
-  <lastmod>2019-10-19T20:19:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/snippets/wyswietl-typ-elementow-dataframe/</loc>
-  <lastmod>2019-11-01T19:38:00Z</lastmod>
+  <lastmod>2020-05-17T20:34:00Z</lastmod>
  </url>
 </urlset>
