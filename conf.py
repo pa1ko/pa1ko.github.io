@@ -221,8 +221,8 @@ POSTS = (
     ("posts/blog/*.md", "blog", "post.tmpl"),
     ("posts/blog/*.txt", "blog", "post.tmpl"),
     ("posts/blog/*.html", "blog", "post.tmpl"),
-    ("posts/snippets/*.ipynb", "snippets", "snippet.tmpl"),
-    ("posts/snippets/*.md", "snippets", "snippet.tmpl"),
+    ("posts/snippets/*.ipynb", "snippets", "post.tmpl"),
+    ("posts/snippets/*.md", "snippets", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.html", "", "page.tmpl"),
@@ -991,7 +991,7 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, intensedebate, isso, muut, commento
 # You can leave this option blank to disable comments.
-# COMMENT_SYSTEM = "disqus"
+COMMENT_SYSTEM = ""
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
