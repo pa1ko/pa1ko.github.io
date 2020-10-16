@@ -49,6 +49,7 @@ BLOG_DESCRIPTION = "My snippets box"  # (translatable)
 # fa        Persian
 # fi        Finnish
 # fr        French
+# fur       Friulian
 # gl        Galician
 # he        Hebrew
 # hi        Hindi
@@ -166,7 +167,7 @@ THEME_COLOR = '#5670d4'
 THEME_CONFIG = {
     DEFAULT_LANG: {
         # Show the latest featured post in a large box, with the previewimage as its background.
-        'featured_large': True,
+        'featured_large': False,
         # Show the first (remaining) two featured posts in small boxes.
         'featured_small': False,
         # Show featured posts on mobile.
@@ -248,20 +249,24 @@ TIMEZONE = "Europe/Warsaw"
 # FORCE_ISO8601 = False
 
 # Date format used to display post dates. (translatable)
-# (str used by datetime.datetime.strftime)
+# Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time
+# You can also use 'full', 'long', 'medium', or 'short'
 DATE_FORMAT = 'YYYY-MM-DD'
 
 # Date format used to display post dates, if local dates are used. (translatable)
-# (str used by moment.js)
-JS_DATE_FORMAT = 'YYYY-MM-DD'
+# Used by Luxon: https://moment.github.io/luxon/docs/manual/formatting
+# Example for presets: {'preset': True, 'format': 'DATE_FULL'}
+# LUXON_DATE_FORMAT = {
+#     DEFAULT_LANG: {'preset': False, 'format': 'yyyy-MM-dd HH:mm'},
+# }
 
 # Date fanciness.
 #
-# 0 = using DATE_FORMAT and TIMEZONE
-# 1 = using JS_DATE_FORMAT and local user time (via moment.js)
-# 2 = using a string like “2 days ago”
+# 0 = using DATE_FORMAT and TIMEZONE (without JS)
+# 1 = using LUXON_DATE_FORMAT and local user time (JS, using Luxon)
+# 2 = using a string like “2 days ago” (JS, using Luxon)
 #
-# Your theme must support it, bootstrap and bootstrap3 already do.
+# Your theme must support it, Bootstrap already does.
 DATE_FANCINESS = 2
 
 # Customize the locale/region used for a language.
@@ -284,27 +289,34 @@ DATE_FANCINESS = 2
 # Feel free to add or delete extensions to any list, but don't add any new
 # compilers unless you write the interface for it yourself.
 #
+# The default compiler for `new_post` is the first entry in the POSTS tuple.
+#
 # 'rest' is reStructuredText
 # 'markdown' is Markdown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
-    "rest": ('.rst', '.txt'),
-    "markdown": ('.md', '.mdown', '.markdown'),
-    # "textile": ('.textile',),
-    # "txt2tags": ('.t2t',),
-    # "bbcode": ('.bb',),
-    "wiki": ('.wiki',),
-    "ipynb": ('.ipynb',),
-    "html": ('.html', '.htm'),
+    "rest": ['.rst', '.txt'],
+    "markdown": ['.md', '.mdown', '.markdown'],
+    # "textile": ['.textile'],
+    # "txt2tags": ['.t2t'],
+    # "bbcode": ['.bb'],
+    # "wiki": ['.wiki'],
+    "ipynb": ['.ipynb'],
+    "html": ['.html', '.htm'],
     # PHP files are rendered the usual way (i.e. with the full templates).
     # The resulting files have .php extensions, making it possible to run
     # them without reconfiguring your server to recognize them.
-    # "php": ('.php',),
+    # "php": ['.php'],
     # Pandoc detects the input from the source filename
     # but is disabled by default as it would conflict
     # with many of the others.
-    # "pandoc": ('.rst', '.md', '.txt'),
+    # "pandoc": ['.rst', '.md', '.txt'],
 }
+
+# Enable reST directives that insert the contents of external files such
+# as "include" and "raw." This maps directly to the docutils file_insertion_enabled
+# config. See: http://docutils.sourceforge.net/docs/user/config.html#file-insertion-enabled
+# REST_FILE_INSERTION_ENABLED = True
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
@@ -336,6 +348,14 @@ COMPILERS = {
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
 LOGO_URL = '/webpage_logo.png'
+
+# When linking posts to social media, Nikola provides Open Graph metadata
+# which is used to show a nice preview. This includes an image preview
+# taken from the post's previewimage metadata field.
+# This option lets you use an image to be used if the post doesn't have it.
+# The default is None, valid values are URLs or output paths like
+# "/images/foo.jpg"
+# DEFAULT_PREVIEW_IMAGE = None
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
@@ -740,7 +760,16 @@ CACHE_FOLDER = '.cache'
 # MAX_IMAGE_SIZE = 1280
 # USE_FILENAME_AS_TITLE = True
 # EXTRA_IMAGE_EXTENSIONS = []
-#
+
+# Use a thumbnail (defined by ".. previewimage:" in the gallery's index) in
+# list of galleries for each gallery
+GALLERIES_USE_THUMBNAIL = False
+
+# Image to use as thumbnail for those galleries that don't have one
+# None: show a grey square
+# '/url/to/file': show the image in that url
+GALLERIES_DEFAULT_THUMBNAIL = None
+
 # If set to False, it will sort by filename instead. Defaults to True
 # GALLERY_SORT_BY_DATE = True
 
@@ -865,7 +894,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # META_GENERATOR_TAG = True
 
 # Color scheme to be used for code blocks. If your theme provides
-# "assets/css/code.css" this is ignored. Leave empty to disable.
+# "assets/css/code.css" this is ignored. Set to None to disable.
 # Can be any of:
 # algol, algol_nu, autumn, borland, bw, colorful, default, emacs, friendly,
 # fruity, igor, lovelace, manni, monokai, murphy, native, paraiso-dark,
@@ -962,12 +991,12 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, intensedebate, isso, muut, commento
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = ""
+# COMMENT_SYSTEM = "disqus"
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
 # is in the manual.
-COMMENT_SYSTEM_ID = ""
+# COMMENT_SYSTEM_ID = "nikolademo"
 
 # Create index.html for page folders?
 # WARNING: if a page would conflict with the index file (usually
@@ -975,9 +1004,9 @@ COMMENT_SYSTEM_ID = ""
 #          will not be generated for that directory.
 # PAGE_INDEX = False
 # Enable comments on pages (i.e. not posts)?
-# COMMENTS_IN_PAGES = False
+COMMENTS_IN_PAGES = False
 # Enable comments on picture gallery pages?
-# COMMENTS_IN_GALLERIES = False
+COMMENTS_IN_GALLERIES = False
 
 # What file should be used for directory indexes?
 # Defaults to index.html
@@ -1020,7 +1049,7 @@ PRETTY_URLS = True
 # If True, use the scheduling rule to all posts (not pages!) by default
 # SCHEDULE_ALL = False
 
-# Do you want a add a Mathjax config file?
+# Do you want to add a Mathjax config file?
 # MATHJAX_CONFIG = ""
 
 # If you want support for the $.$ syntax (which may conflict with running
@@ -1212,7 +1241,9 @@ EXTRA_HEAD_DATA = """
 # The possibility to extract metadata from the filename by using a
 # regular expression.
 # To make it work you need to name parts of your regular expression.
-# The following names will be used to extract metadata:
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
+"""
 # - title
 # - slug
 # - date
@@ -1347,3 +1378,7 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
+# Add any post types here that you want to be displayed without a title.
+# Ir your theme supports it, the titles will not be shown.
+TYPES_TO_HIDE_TITLE = []
