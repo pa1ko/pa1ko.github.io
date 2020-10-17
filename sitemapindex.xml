@@ -6,31 +6,59 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://pkonarzewski.github.io/blog/rss.xml</loc>
+  <lastmod>2018-05-06T07:54:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://pkonarzewski.github.io/categories/algorithm.xml</loc>
+  <lastmod>2019-10-14T20:52:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://pkonarzewski.github.io/categories/cat_blog.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2019-10-19T15:28:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/cat_snippet.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2020-10-17T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://pkonarzewski.github.io/categories/cat_snippets.xml</loc>
+  <lastmod>2019-10-19T15:23:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/jupyter.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2019-10-19T15:33:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/pandas.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2020-10-17T12:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://pkonarzewski.github.io/categories/postgres.xml</loc>
+  <lastmod>2020-10-17T11:57:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/python-basics.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2020-10-17T11:57:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://pkonarzewski.github.io/categories/python.xml</loc>
+  <lastmod>2019-10-14T20:09:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://pkonarzewski.github.io/galleries/rss.xml</loc>
+  <lastmod>2020-10-17T12:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/rss.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2020-10-17T12:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/sitemap.xml</loc>
-  <lastmod>2020-05-17T20:58:00Z</lastmod>
+  <lastmod>2020-10-17T12:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://pkonarzewski.github.io/snippets/rss.xml</loc>
+  <lastmod>2018-05-06T08:00:00Z</lastmod>
  </sitemap>
 </sitemapindex>

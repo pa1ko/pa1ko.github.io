@@ -18,6 +18,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
 <meta name="author" content="Patryk Konarzewski">
 <link rel="prev" href="../wyswietl-typ-elementow-dataframe/" title="Wyświetl typ elementów DataFrame" type="text/html">
+<link rel="next" href="../znajdywanie-zabijanie-kwerend-postgres/" title="Znajdywanie i zabijanie kwerend w Postgresie" type="text/html">
 <meta property="og:site_name" content="Snippets Box">
 <meta property="og:title" content="F-string">
 <meta property="og:url" content="https://pkonarzewski.github.io/snippets/f-string/">
@@ -77,10 +78,10 @@ print('Hell">
     <div class="body-content">
         <!--Body content-->
         
-    <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">F-string</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">F-string</a></h1>
 
         <div class="metadata">
-            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Patryk Konarzewski
             </span></p>
             <p class="dateline">
@@ -91,7 +92,7 @@ print('Hell">
         </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-        <div>
+    <div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -111,7 +112,7 @@ print('Hell">
 <span class="n">age</span> <span class="o">=</span> <span class="mi">56</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello </span><span class="si">{name}</span><span class="s1">, age: </span><span class="si">{age}</span><span class="s1">'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">, age: </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">'Hello </span><span class="si">{name}</span><span class="s1">, age: </span><span class="si">{age}</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -153,7 +154,7 @@ Hello Yukko, age: 56
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="mi">13</span> <span class="o">*</span> <span class="mi">5</span><span class="si">}</span><span class="s1">'</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span><span class="s1">'{13 * 5}'</span>
 </pre></div>
 
     </div>
@@ -189,7 +190,7 @@ Hello Yukko, age: 56
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
     <span class="k">return</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
 
-<span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">reverse</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="si">}</span><span class="s1"> olleH'</span>
+<span class="n">f</span><span class="s1">'{reverse(name)} olleH'</span>
 </pre></div>
 
     </div>
@@ -223,8 +224,8 @@ Hello Yukko, age: 56
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="sa">f</span><span class="s1">'Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> '</span>
-    <span class="sa">f</span><span class="s1">'your age is: </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s1">'</span>
+    <span class="n">f</span><span class="s1">'Hello </span><span class="si">{name}</span><span class="s1"> '</span>
+    <span class="n">f</span><span class="s1">'your age is: </span><span class="si">{age}</span><span class="s1">'</span>
 <span class="p">)</span>
 
 <span class="n">text</span>
@@ -256,8 +257,18 @@ Hello Yukko, age: 56
 
 </div>
 </div>
-        </div>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/python-basics/" rel="tag">python-basics</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../wyswietl-typ-elementow-dataframe/" rel="prev" title="Wyświetl typ elementów DataFrame">Poprzedni post</a>
+            </li>
+            <li class="next">
+                <a href="../znajdywanie-zabijanie-kwerend-postgres/" rel="next" title="Znajdywanie i zabijanie kwerend w Postgresie">Następny post</a>
+            </li>
+        </ul></nav></aside><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
         </script></article><!--End of body content--><footer id="footer">
             Contents © 2020         <a href="mailto:pa.ko@wp.pl">Patryk Konarzewski</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
@@ -268,7 +279,7 @@ Hello Yukko, age: 56
 
         <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><!-- fancy dates --><script>
         moment.locale("pl");
-        fancydates(2, "YYYY-MM-DD");
+        fancydates(2, "YYYY-MM-DD HH:mm");
         </script><!-- end fancy dates --><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',

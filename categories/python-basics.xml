@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snippets Box (Posty o python-basics)</title><link>https://pkonarzewski.github.io/</link><description></description><atom:link href="https://pkonarzewski.github.io/categories/python-basics.xml" rel="self" type="application/rss+xml"></atom:link><language>pl</language><copyright>Contents © 2020 &lt;a href="mailto:pa.ko@wp.pl"&gt;Patryk Konarzewski&lt;/a&gt; </copyright><lastBuildDate>Sun, 17 May 2020 20:58:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>F-string</title><link>https://pkonarzewski.github.io/snippets/f-string/</link><dc:creator>Patryk Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snippets Box (Posty o python-basics)</title><link>https://pkonarzewski.github.io/</link><description></description><atom:link href="https://pkonarzewski.github.io/categories/python-basics.xml" rel="self" type="application/rss+xml"></atom:link><language>pl</language><copyright>Contents © 2020 &lt;a href="mailto:pa.ko@wp.pl"&gt;Patryk Konarzewski&lt;/a&gt; </copyright><lastBuildDate>Sat, 17 Oct 2020 11:57:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>F-string</title><link>https://pkonarzewski.github.io/snippets/f-string/</link><dc:creator>Patryk Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Nowa funkcjonalność dodana w Pythonie 3.6, f-string jest nowym sposobem interpolacji stringów. Używa się go przez dodanie &lt;code&gt;f''&lt;/code&gt; przed stringiem.&lt;/p&gt;
@@ -16,7 +16,7 @@
 &lt;span class="n"&gt;age&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;56&lt;/span&gt;
 
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Hello &lt;/span&gt;&lt;span class="si"&gt;{name}&lt;/span&gt;&lt;span class="s1"&gt;, age: &lt;/span&gt;&lt;span class="si"&gt;{age}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'Hello &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;, age: &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'Hello &lt;/span&gt;&lt;span class="si"&gt;{name}&lt;/span&gt;&lt;span class="s1"&gt;, age: &lt;/span&gt;&lt;span class="si"&gt;{age}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -56,7 +56,7 @@ Hello Yukko, age: 56
 &lt;div class="prompt input_prompt"&gt;In [9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'{13 * 5}'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -92,7 +92,7 @@ Hello Yukko, age: 56
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;reverse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s1"&gt;''&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;reversed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 
-&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;reverse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt; olleH'&lt;/span&gt;
+&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'{reverse(name)} olleH'&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -126,8 +126,8 @@ Hello Yukko, age: 56
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;
-    &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'Hello &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt; '&lt;/span&gt;
-    &lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'your age is: &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;age&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;
+    &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'Hello &lt;/span&gt;&lt;span class="si"&gt;{name}&lt;/span&gt;&lt;span class="s1"&gt; '&lt;/span&gt;
+    &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;'your age is: &lt;/span&gt;&lt;span class="si"&gt;{age}&lt;/span&gt;&lt;span class="s1"&gt;'&lt;/span&gt;
 &lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="n"&gt;text&lt;/span&gt;
