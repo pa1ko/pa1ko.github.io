@@ -52,5 +52,4 @@ nikola init
 
 ### How to deploy
 
-Auto deploy set with Travis CI
-`nikola github_deploy`
+Auto deploy set with Github Actions, activated when pushing branch src to origin.
