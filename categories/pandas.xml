@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snippets Box (Posty o pandas)</title><link>https://pkonarzewski.github.io/</link><description></description><atom:link href="https://pkonarzewski.github.io/categories/pandas.xml" rel="self" type="application/rss+xml"></atom:link><language>pl</language><copyright>Contents © 2020 &lt;a href="mailto:pa.ko@wp.pl"&gt;Patryk Konarzewski&lt;/a&gt; </copyright><lastBuildDate>Sat, 17 Oct 2020 12:01:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalizacja kolumn w Pandas</title><link>https://pkonarzewski.github.io/snippets/normalizacja-kolumn-w-pandas/</link><dc:creator>Patryk Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snippets Box (Posty o pandas)</title><link>https://pkonarzewski.github.io/</link><description></description><atom:link href="https://pkonarzewski.github.io/categories/pandas.xml" rel="self" type="application/rss+xml"></atom:link><language>pl</language><copyright>Contents © 2020 &lt;a href="mailto:pa.ko+github@wp.pl"&gt;P Konarzewski&lt;/a&gt; </copyright><lastBuildDate>Sat, 17 Oct 2020 19:53:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalizacja kolumn w Pandas</title><link>https://pkonarzewski.github.io/blog/normalizacja-kolumn-w-pandas/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
@@ -22,7 +22,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;PL_DIACRITCS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
@@ -61,9 +61,17 @@
 &lt;/div&gt;
 
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Przykład użycia&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;([],&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;"SdF"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"[[śąćąCĆSĘ-_)"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"   Teskty i   inne"&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;"@$@%"&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -80,7 +88,7 @@
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
 
 
 
@@ -123,7 +131,7 @@
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [4]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In [5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;col_name_norm&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -140,7 +148,7 @@
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[5]:&lt;/div&gt;
 
 
 
@@ -180,7 +188,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/snippets/normalizacja-kolumn-w-pandas/</guid><pubDate>Sat, 17 Oct 2020 11:10:19 GMT</pubDate></item><item><title>Wyświetl typ elementów DataFrame</title><link>https://pkonarzewski.github.io/snippets/wyswietl-typ-elementow-dataframe/</link><dc:creator>Patryk Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/blog/normalizacja-kolumn-w-pandas/</guid><pubDate>Sat, 17 Oct 2020 11:10:19 GMT</pubDate></item><item><title>Wyświetl typ elementów DataFrame</title><link>https://pkonarzewski.github.io/blog/wyswietl-typ-elementow-dataframe/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Sposób na wyświetlenie typów wszystkich elementów DataFrame'a.&lt;/p&gt;
@@ -345,7 +353,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/snippets/wyswietl-typ-elementow-dataframe/</guid><pubDate>Fri, 01 Nov 2019 19:28:08 GMT</pubDate></item><item><title>Uzupełnianie braków w zakresie dat</title><link>https://pkonarzewski.github.io/snippets/uzupelnianie-brakow-w-zakresie-dat/</link><dc:creator>Patryk Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/blog/wyswietl-typ-elementow-dataframe/</guid><pubDate>Fri, 01 Nov 2019 19:28:08 GMT</pubDate></item><item><title>Uzupełnianie braków w zakresie dat</title><link>https://pkonarzewski.github.io/blog/uzupelnianie-brakow-w-zakresie-dat/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Uzupełnianie braków w datach&lt;/p&gt;
@@ -358,7 +366,7 @@
 &lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;datetime&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;datetime&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -725,7 +733,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/snippets/uzupelnianie-brakow-w-zakresie-dat/</guid><pubDate>Sat, 19 Oct 2019 19:52:49 GMT</pubDate></item><item><title>Spłaszczanie indeksów hierarchicznych (MultiIndex)</title><link>https://pkonarzewski.github.io/snippets/splaszczanie-indeksow-hierarchicznych-multiindex/</link><dc:creator>Patryk Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/blog/uzupelnianie-brakow-w-zakresie-dat/</guid><pubDate>Sat, 19 Oct 2019 19:52:49 GMT</pubDate></item><item><title>Spłaszczanie indeksów hierarchicznych (MultiIndex)</title><link>https://pkonarzewski.github.io/blog/splaszczanie-indeksow-hierarchicznych-multiindex/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Spłaszczenie indeksów hierarchicznych (MultiIndex) w Pandas.&lt;/p&gt;
@@ -862,7 +870,7 @@
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Spłaszczanie-kolumn"&gt;Spłaszczanie kolumn&lt;a class="anchor-link" href="https://pkonarzewski.github.io/snippets/splaszczanie-indeksow-hierarchicznych-multiindex/#Sp%C5%82aszczanie-kolumn"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="Spłaszczanie-kolumn"&gt;Spłaszczanie kolumn&lt;a class="anchor-link" href="https://pkonarzewski.github.io/blog/splaszczanie-indeksow-hierarchicznych-multiindex/#Sp%C5%82aszczanie-kolumn"&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -971,7 +979,7 @@
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h4 id="Spłaszczanie-indeksu"&gt;Spłaszczanie indeksu&lt;a class="anchor-link" href="https://pkonarzewski.github.io/snippets/splaszczanie-indeksow-hierarchicznych-multiindex/#Sp%C5%82aszczanie-indeksu"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id="Spłaszczanie-indeksu"&gt;Spłaszczanie indeksu&lt;a class="anchor-link" href="https://pkonarzewski.github.io/blog/splaszczanie-indeksow-hierarchicznych-multiindex/#Sp%C5%82aszczanie-indeksu"&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1063,4 +1071,4 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/snippets/splaszczanie-indeksow-hierarchicznych-multiindex/</guid><pubDate>Sun, 06 May 2018 07:40:06 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>pandas</category><guid>https://pkonarzewski.github.io/blog/splaszczanie-indeksow-hierarchicznych-multiindex/</guid><pubDate>Sun, 06 May 2018 07:40:06 GMT</pubDate></item></channel></rss>
