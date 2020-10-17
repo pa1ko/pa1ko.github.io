@@ -24,43 +24,40 @@
 <h3 class="mt-5">Lista skrawków</h3>
 <hr>
 
-<!-- PYTHON -->
-<h4 class="mt-4">Python</h4>
 
-<div class="card mt-3">
-    <h5 class="card-header">Core</h5>
-    <div class="card-body">
-        {{% post_list categories=snippet template=snippets_list.tmpl tags=python-basics %}}{{% /post_list %}}
-    </div>
+
+<div class="card mb-3">
+
+  <h5 class="card-header">
+    PostgreSQL
+  </h5>
+
+  <div class="card-body">
+    <h5 class="card-title">Core</h5>
+    <div class="card-text">{{% post_list categories=snippet template=snippets_list.tmpl tags=postgres %}}{{% /post_list %}}</div>
+  </div>
+
 </div>
 
-<div class="card mt-3">
-    <h5 class="card-header">Pandas</h5>
-    <div class="card-body">
-        {{% post_list categories=snippet template=snippets_list.tmpl tags=pandas %}}{{% /post_list %}}
-    </div>
-</div>
 
-<div class="card mt-3">
-    <h5 class="card-header">Jupyter</h5>
-    <div class="card-body">
-        {{% post_list categories=snippet template=snippets_list.tmpl tags=jupyter %}}{{% /post_list %}}
-    </div>
-</div>
+<div class="card mb-3">
+  <h5 class="card-header">
+    Python
+  </h5>
 
-<!-- LINUX -->
-<!-- <h4 class="mt-4">Linux</h4>
+  <div class="card-body">
+    <h5 class="card-title">Core</h5>
+    <div class="card-text">{{% post_list categories=snippet template=snippets_list.tmpl tags=python-basics %}}{{% /post_list %}}</div>
+  </div>
 
-<div class="card mt-3">
-    <h5 class="card-header">Podstawy</h5>
-    <div class="card-body">
-        {{% post_list categories=snippet template=snippets_list.tmpl tags=linux %}}{{% /post_list %}}
-    </div>
-</div> -->
+  <div class="card-body">
+    <h5 class="card-title">Jupyter</h5>
+    <div class="card-text">{{% post_list categories=snippet template=snippets_list.tmpl tags=jupyter %}}{{% /post_list %}}</div>
+  </div>
 
-<div class="card mt-3">
-    <h5 class="card-header">PostgreSQL</h5>
-    <div class="card-body">
-        {{% post_list categories=snippet template=snippets_list.tmpl tags=postgres %}}{{% /post_list %}}
-    </div>
+  <div class="card-body">
+    <h5 class="card-title">Pandas</h5>
+    <div class="card-text">{{% post_list categories=snippet template=snippets_list.tmpl tags=pandas %}}{{% /post_list %}}</div>
+  </div>
+
 </div>
