@@ -16,7 +16,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Patryk Konarzewski"  # (translatable)
+BLOG_AUTHOR = "P Konarzewski"  # (translatable)
 BLOG_TITLE = "Snippets Box"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
@@ -24,7 +24,7 @@ SITE_URL = "https://pkonarzewski.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://pkonarzewski.github.io/"
-BLOG_EMAIL = "pa.ko@wp.pl"
+BLOG_EMAIL = "pa.ko+github@wp.pl"
 BLOG_DESCRIPTION = "My snippets box"  # (translatable)
 
 # Nikola is multilingual!
