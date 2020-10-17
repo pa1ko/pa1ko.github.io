@@ -153,7 +153,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4-jinja"
+THEME = "bootstrap4-jinja"
 
 # Primary color of your theme. This will be used to customize your theme.
 # Must be a HEX value.
@@ -221,8 +221,8 @@ POSTS = (
     ("posts/blog/*.md", "blog", "post.tmpl"),
     ("posts/blog/*.txt", "blog", "post.tmpl"),
     ("posts/blog/*.html", "blog", "post.tmpl"),
-    ("posts/snippets/*.ipynb", "snippets", "post.tmpl"),
-    ("posts/snippets/*.md", "snippets", "post.tmpl"),
+    ("posts/snippets/*.ipynb", "blog", "post.tmpl"),
+    ("posts/snippets/*.md", "blog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.html", "", "page.tmpl"),
