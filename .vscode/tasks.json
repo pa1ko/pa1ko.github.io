@@ -1,0 +1,81 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Nikola: auto",
+            "type": "shell",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "nikola",
+                "auto"
+            ],
+            "group": "test",
+            "isBackground": true
+        },
+        {
+            "label": "Nikola: clean",
+            "type": "shell",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "nikola",
+                "clean"
+            ],
+            "group": "test",
+        },
+        {
+            "label": "Nikola: build",
+            "type": "shell",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "nikola",
+                "build"
+            ],
+            "group": "test",
+        },
+        {
+            "label": "Nikola: new_post",
+            "type": "shell",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "nikola",
+                "new_post",
+                "-f",
+                "${input:post_format}",
+                "-t",
+                "${input:post_title}"
+            ],
+            "group": "test"
+        },
+        {
+            "label": "Deploy",
+            "type": "shell",
+            "command": "git pull origin && git commit -m 'Commit changes' && git push origin",
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "post_format",
+            "description": "Post format",
+            "type": "pickString",
+            "options": [
+                "markdown",
+                "ipynb"
+            ]
+        },
+        {
+            "id": "post_title",
+            "description": "Post title",
+            "type": "promptString",
+        }
+    ]
+}
