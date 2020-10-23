@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snippets Box</title><link>https://pkonarzewski.github.io/</link><description>My snippets box</description><atom:link href="https://pkonarzewski.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>pl</language><copyright>Contents © 2020 &lt;a href="mailto:pa.ko+github@wp.pl"&gt;P Konarzewski&lt;/a&gt; </copyright><lastBuildDate>Sat, 17 Oct 2020 19:53:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Normalizacja kolumn w Pandas</title><link>https://pkonarzewski.github.io/blog/normalizacja-kolumn-w-pandas/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Snippets Box</title><link>https://pkonarzewski.github.io/</link><description>My snippets box</description><atom:link href="https://pkonarzewski.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>pl</language><copyright>Contents © 2020 &lt;a href="mailto:pa.ko+github@wp.pl"&gt;P Konarzewski&lt;/a&gt; </copyright><lastBuildDate>Fri, 23 Oct 2020 15:48:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Aktualizacja forka repozytorium</title><link>https://pkonarzewski.github.io/blog/aktualizacja-forka-repozytorium/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;p&gt;Gdy chcemy zaktualizować nasz fork czyjegoś repozytorium.&lt;/p&gt;
+&lt;p&gt;Dodajemy do &lt;em&gt;remote&lt;/em&gt; repozytorium na podstawie którego został stworzony fork.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git remote add upstream https://github.com/project/repo.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Robimy pulla mastera z &lt;em&gt;upstream&lt;/em&gt;, a potem rebase na naszym loklanym masterze.&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git fetch upstream
+git checkout master
+git rebase upstream/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><category>git</category><guid>https://pkonarzewski.github.io/blog/aktualizacja-forka-repozytorium/</guid><pubDate>Fri, 23 Oct 2020 15:30:11 GMT</pubDate></item><item><title>Normalizacja kolumn w Pandas</title><link>https://pkonarzewski.github.io/blog/normalizacja-kolumn-w-pandas/</link><dc:creator>P Konarzewski</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
 &lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
