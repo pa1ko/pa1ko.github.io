@@ -291,11 +291,16 @@ git rebase upstream/master
     </header><div class="e-content entry-content">
     <div>
 <p>Znajdywanie aktywnych kwerend:</p>
-<p><code>SELECT * FROM pg_stat_activity WHERE state = 'active';</code></p>
+<pre class="code literal-block"><span></span><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">pg_stat_activity</span> <span class="k">WHERE</span> <span class="k">state</span> <span class="o">=</span> <span class="s1">'active'</span><span class="p">;</span>
+</code></pre>
+
 <p>Mając PID z poprzedniej kwerendy, możemy zabić kwerendę:</p>
-<p><code>SELECT pg_cancel_backend(PID);</code></p>
-<p>Powyższa operacja może chwilę potrwać, jeżeli chcemy to zrobić brutalnie to:</p>
-<p><code>SELECT pg_terminate_backend(PID);</code></p>
+<pre class="code literal-block"><span></span><code><span class="k">SELECT</span> <span class="n">pg_cancel_backend</span><span class="p">(</span><span class="n">PID</span><span class="p">);</span>
+</code></pre>
+
+<p>Powyższa operacja może chwilę potrwać, jeżeli chcemy zrobić to brutalniej:</p>
+<pre class="code literal-block"><span></span><code><span class="k">SELECT</span> <span class="n">pg_terminate_backend</span><span class="p">(</span><span class="n">PID</span><span class="p">);</span>
+</code></pre>
 </div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="f-string/" class="u-url">F-string</a></h1>
