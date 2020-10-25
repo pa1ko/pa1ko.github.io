@@ -14,7 +14,7 @@ var tipuesearch = {
     },
     {
       "title": "Znajdywanie i zabijanie kwerend w Postgresie",
-      "text": "Znajdywanie aktywnych kwerend:\nSELECT * FROM pg_stat_activity WHERE state = 'active';\n\n\nMaj\u0105c PID z poprzedniej kwerendy, mo\u017cemy zabi\u0107 kwerend\u0119:\nSELECT pg_cancel_backend(PID);\n\n\nPowy\u017csza operacja mo\u017ce chwil\u0119 potrwa\u0107, je\u017celi chcemy zrobi\u0107 to brutalniej:\nSELECT pg_terminate_backend(PID);",
+      "text": "Znajdywanie aktywnych kwerend:\nSELECT pid, age(clock_timestamp(), query_start), usename, query\nFROM pg_stat_activity\nWHERE query != '<IDLE>' AND query NOT ILIKE '%pg_stat_activity%'\nORDER BY query_start DESC;\n\n\nMaj\u0105c PID z poprzedniej kwerendy, mo\u017cemy zabi\u0107 kwerend\u0119:\nSELECT pg_cancel_backend(PID);\n\n\nPowy\u017csza operacja mo\u017ce chwil\u0119 potrwa\u0107, je\u017celi chcemy zrobi\u0107 to brutalniej:\nSELECT pg_terminate_backend(PID);",
       "tags": "postgres",
       "url": "https://pkonarzewski.github.io/blog/znajdywanie-zabijanie-kwerend-postgres/"
     },

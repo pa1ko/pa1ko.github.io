@@ -7,102 +7,102 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://pkonarzewski.github.io/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/2018/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/2019/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/2020/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/archive.html</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/aktualizacja-forka-repozytorium/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/f-string/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/instalowanie-ipython-kernel-dla-jupytera/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/listy-i-slowniki-skladane-w-pythonie/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/normalizacja-kolumn-w-pandas/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/splaszczanie-indeksow-hierarchicznych-multiindex/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/uzupelnianie-brakow-w-zakresie-dat/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/witajcie/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/wyswietl-typ-elementow-dataframe/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/blog/znajdywanie-zabijanie-kwerend-postgres/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/cat_blog/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/cat_snippet/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/git/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/jupyter/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/pandas/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/postgres/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/categories/python-basics/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
  <url>
   <loc>https://pkonarzewski.github.io/search/</loc>
-  <lastmod>2020-10-23T15:55:00Z</lastmod>
+  <lastmod>2020-10-25T12:49:00Z</lastmod>
  </url>
 </urlset>

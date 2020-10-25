@@ -291,7 +291,10 @@ git rebase upstream/master
     </header><div class="e-content entry-content">
     <div>
 <p>Znajdywanie aktywnych kwerend:</p>
-<pre class="code literal-block"><span></span><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">pg_stat_activity</span> <span class="k">WHERE</span> <span class="k">state</span> <span class="o">=</span> <span class="s1">'active'</span><span class="p">;</span>
+<pre class="code literal-block"><span></span><code><span class="k">SELECT</span> <span class="n">pid</span><span class="p">,</span> <span class="n">age</span><span class="p">(</span><span class="n">clock_timestamp</span><span class="p">(),</span> <span class="n">query_start</span><span class="p">),</span> <span class="n">usename</span><span class="p">,</span> <span class="n">query</span>
+<span class="k">FROM</span> <span class="n">pg_stat_activity</span>
+<span class="k">WHERE</span> <span class="n">query</span> <span class="o">!=</span> <span class="s1">'&lt;IDLE&gt;'</span> <span class="k">AND</span> <span class="n">query</span> <span class="k">NOT</span> <span class="k">ILIKE</span> <span class="s1">'%pg_stat_activity%'</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">query_start</span> <span class="k">DESC</span><span class="p">;</span>
 </code></pre>
 
 <p>Mając PID z poprzedniej kwerendy, możemy zabić kwerendę:</p>
