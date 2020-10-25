@@ -12,7 +12,10 @@
 Znajdywanie aktywnych kwerend:
 
 ```sql
-SELECT * FROM pg_stat_activity WHERE state = 'active';
+SELECT pid, age(clock_timestamp(), query_start), usename, query
+FROM pg_stat_activity
+WHERE query != '<IDLE>' AND query NOT ILIKE '%pg_stat_activity%'
+ORDER BY query_start DESC;
 ```
 
 Mając PID z poprzedniej kwerendy, możemy zabić kwerendę:
