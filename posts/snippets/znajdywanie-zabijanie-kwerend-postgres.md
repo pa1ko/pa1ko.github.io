@@ -11,12 +11,18 @@
 
 Znajdywanie aktywnych kwerend:
 
-`SELECT * FROM pg_stat_activity WHERE state = 'active';`
+```sql
+SELECT * FROM pg_stat_activity WHERE state = 'active';
+```
 
 Mając PID z poprzedniej kwerendy, możemy zabić kwerendę:
 
-`SELECT pg_cancel_backend(PID);`
+```sql
+SELECT pg_cancel_backend(PID);
+```
 
-Powyższa operacja może chwilę potrwać, jeżeli chcemy to zrobić brutalnie to:
+Powyższa operacja może chwilę potrwać, jeżeli chcemy zrobić to brutalniej:
 
-`SELECT pg_terminate_backend(PID);`
+```sql
+SELECT pg_terminate_backend(PID);
+```
