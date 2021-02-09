@@ -5,17 +5,28 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posty o pandas | Snippets Box</title>
+<title>Eksport execution plan | Snippets Box</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="pl" href="../../rss.xml">
-<link rel="canonical" href="https://pkonarzewski.github.io/categories/pandas/">
+<link rel="canonical" href="https://pkonarzewski.github.io/blog/eksport-execution-plan/">
 <link rel="icon" href="../../favicon.ico" sizes="16x16">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
-<link rel="alternate" type="application/rss+xml" title="RSS for tag pandas" hreflang="pl" href="../pandas.xml">
+<meta name="author" content="P Konarzewski">
+<link rel="prev" href="../aktualizacja-forka-repozytorium/" title="Aktualizacja forka repozytorium" type="text/html">
+<meta property="og:site_name" content="Snippets Box">
+<meta property="og:title" content="Eksport execution plan">
+<meta property="og:url" content="https://pkonarzewski.github.io/blog/eksport-execution-plan/">
+<meta property="og:description" content="Eksportowanie execution plan jako wsad dla narzędzi wizualizacyjnych:
+EXPLAIN (ANALYZE, COSTS, VERBOSE, BUFFERS, FORMAT JSON)
+SELECT *
+(...)">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-02-09T09:55:45+01:00">
+<meta property="article:tag" content="postgres">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Przejdź do treści</a>
@@ -49,29 +60,36 @@ navbar-dark bg-dark
     <div class="body-content">
         <!--Body content-->
         
-<article class="tagpage"><header><h1>Posty o pandas</h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Eksport execution plan</a></h1>
+
         <div class="metadata">
-                            <p class="feedlink">
-                                    <a href="../pandas.xml" hreflang="pl" type="application/rss+xml">Kanał RSS</a>
-
-                </p>
-
+            <p class="byline author vcard p-author h-card"><span class="byline-name fn p-name" itemprop="author">
+                    P Konarzewski
+            </span></p>
+            <p class="dateline">
+            <a href="." rel="bookmark">
+            <time class="published dt-published" datetime="2021-02-09T09:55:45+01:00" itemprop="datePublished" title="2021-02-40">2021-02-40</time></a>
+            </p>
+            
         </div>
         
-    </header><ul class="postlist">
-<li>
-<time class="listdate" datetime="2020-10-17T13:10:19+02:00" title="2020-10-291">2020-10-291</time><a href="../../blog/normalizacja-kolumn-w-pandas/" class="listtitle">Normalizacja kolumn w Pandas</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2019-11-01T20:28:08+01:00" title="2019-11-305">2019-11-305</time><a href="../../blog/wyswietl-typ-elementow-dataframe/" class="listtitle">Wyświetl typ elementów DataFrame</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2019-10-19T21:52:49+02:00" title="2019-10-292">2019-10-292</time><a href="../../blog/uzupelnianie-brakow-w-zakresie-dat/" class="listtitle">Uzupełnianie braków w zakresie dat</a><a></a>
-</li>
-            <li>
-<time class="listdate" datetime="2018-05-06T09:40:06+02:00" title="2018-05-126">2018-05-126</time><a href="../../blog/splaszczanie-indeksow-hierarchicznych-multiindex/" class="listtitle">Spłaszczanie indeksów hierarchicznych (MultiIndex)</a><a></a>
-</li>
-        </ul></article><!--End of body content--><footer id="footer">
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Eksportowanie <em>execution plan</em> jako wsad dla narzędzi wizualizacyjnych:</p>
+<pre class="code literal-block"><span></span><code><span class="k">EXPLAIN</span> <span class="p">(</span><span class="k">ANALYZE</span><span class="p">,</span> <span class="n">COSTS</span><span class="p">,</span> <span class="k">VERBOSE</span><span class="p">,</span> <span class="n">BUFFERS</span><span class="p">,</span> <span class="n">FORMAT</span> <span class="n">JSON</span><span class="p">)</span>
+<span class="k">SELECT</span> <span class="o">*</span>
+<span class="p">(...)</span>
+</code></pre>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/postgres/" rel="tag">postgres</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../aktualizacja-forka-repozytorium/" rel="prev" title="Aktualizacja forka repozytorium">Poprzedni post</a>
+            </li>
+        </ul></nav></aside></article><!--End of body content--><footer id="footer">
             Contents © 2021         <a href="mailto:pa.ko+github@wp.pl">P Konarzewski</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>

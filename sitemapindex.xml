@@ -7,38 +7,38 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/cat_blog.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/cat_snippet.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/git.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/jupyter.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/pandas.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/postgres.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/categories/python-basics.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/rss.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://pkonarzewski.github.io/sitemap.xml</loc>
-  <lastmod>2020-10-28T10:47:00Z</lastmod>
+  <lastmod>2021-02-09T09:00:00Z</lastmod>
  </sitemap>
 </sitemapindex>

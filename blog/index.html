@@ -15,6 +15,7 @@ og: http://ogp.me/ns# article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="pl" href="../rss.xml">
 <link rel="canonical" href="https://pkonarzewski.github.io/blog/">
 <link rel="icon" href="../favicon.ico" sizes="16x16">
+<link rel="next" href="index-1.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../assets/css/tipuesearch.css">
 </head>
 <body>
@@ -52,7 +53,26 @@ navbar-dark bg-dark
     
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="aktualizacja-forka-repozytorium/" class="u-url">Aktualizacja forka repozytorium</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="eksport-execution-plan/" class="u-url">Eksport execution plan</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                P Konarzewski
+            </span></p>
+            <p class="dateline">
+            <a href="eksport-execution-plan/" rel="bookmark">
+            <time class="published dt-published" datetime="2021-02-09T09:55:45+01:00" itemprop="datePublished" title="2021-02-40">2021-02-40</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Eksportowanie <em>execution plan</em> jako wsad dla narzędzi wizualizacyjnych:</p>
+<pre class="code literal-block"><span></span><code><span class="k">EXPLAIN</span> <span class="p">(</span><span class="k">ANALYZE</span><span class="p">,</span> <span class="n">COSTS</span><span class="p">,</span> <span class="k">VERBOSE</span><span class="p">,</span> <span class="n">BUFFERS</span><span class="p">,</span> <span class="n">FORMAT</span> <span class="n">JSON</span><span class="p">)</span>
+<span class="k">SELECT</span> <span class="o">*</span>
+<span class="p">(...)</span>
+</code></pre>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="aktualizacja-forka-repozytorium/" class="u-url">Aktualizacja forka repozytorium</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 P Konarzewski
@@ -1655,30 +1675,15 @@ Hello Yukko, age: 56
 </div>
 </div>
     </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="witajcie/" class="u-url">Witajcie</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                P Konarzewski
-            </span></p>
-            <p class="dateline">
-            <a href="witajcie/" rel="bookmark">
-            <time class="published dt-published" datetime="2018-05-05T18:26:35+02:00" itemprop="datePublished" title="2018-05-125">2018-05-125</time></a>
-            </p>
-        </div>
-    </header><div class="e-content entry-content">
-    <div>
-<p>Strona ruszyła!</p>
-<p>Witaj, na stronie, z założenia ma to być moją ściągą, ale może przyda się i Tobie :).</p>
-</div>
-    </div>
     </article>
 </div>
-
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        <ul class="pager postindexpager clearfix">
+<li class="next"><a href="index-1.html" rel="next">Starsze posty</a></li>
+        </ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha384-3lJUsx1TJHt7BA4udB5KPnDrlkO8T6J6v/op7ui0BbCjvZ9WqV4Xm6DTP6kQ/iBH" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
         </script><!--End of body content--><footer id="footer">
-            Contents © 2020         <a href="mailto:pa.ko+github@wp.pl">P Konarzewski</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            Contents © 2021         <a href="mailto:pa.ko+github@wp.pl">P Konarzewski</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
             
         </footer>
 </div>

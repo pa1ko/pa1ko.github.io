@@ -1,6 +1,12 @@
 var tipuesearch = {
   "pages": [
     {
+      "title": "Eksport execution plan",
+      "text": "Eksportowanie execution plan jako wsad dla narz\u0119dzi wizualizacyjnych:\nEXPLAIN (ANALYZE, COSTS, VERBOSE, BUFFERS, FORMAT JSON)\nSELECT *\n(...)",
+      "tags": "postgres",
+      "url": "https://pkonarzewski.github.io/blog/eksport-execution-plan/"
+    },
+    {
       "title": "Aktualizacja forka repozytorium",
       "text": "Gdy chcemy zaktualizowa\u0107 nasz fork czyjego\u015b repozytorium.\nDodajemy do remote repozytorium na podstawie kt\u00f3rego zosta\u0142 stworzony fork.\ngit remote add upstream https://github.com/project/repo.git\n\n\nRobimy pulla mastera z upstream, a potem rebase na naszym loklanym masterze.\ngit fetch upstream\ngit checkout master\ngit rebase upstream/master",
       "tags": "git",
@@ -62,7 +68,7 @@ var tipuesearch = {
     },
     {
       "title": "SnippetsBox",
-      "text": "ul {\n    list-style-type: square;\n    -webkit-columns: 2;\n    -moz-columns: 2;\n    columns: 2;\n    list-style-position: inside;\n  }\n\n\n\nLista skrawk\u00f3w\n\n\n\n\n\n  \n    GIT\n  \n\n  \n    Core\n    \n      \n\n    \n            Aktualizacja forka repozytorium\n    \n\n\n  \n\n\n\n\n\n  \n    PostgreSQL\n  \n\n  \n    Core\n    \n      \n\n    \n            Znajdywanie i zabijanie kwerend w Postgresie\n    \n\n\n  \n\n\n\n\n\n  \n    Python\n  \n\n  \n    Core\n    \n      \n\n    \n            F-string\n            Listy i s\u0142owniki sk\u0142adane w Pythonie\n    \n\n\n  \n\n  \n    Jupyter\n    \n      \n\n    \n            Instalowanie nowych kerneli dla Jupytera\n    \n\n\n  \n\n  \n    Pandas\n    \n      \n\n    \n            Normalizacja kolumn w Pandas\n            Wy\u015bwietl typ element\u00f3w DataFrame\n            Uzupe\u0142nianie brak\u00f3w w zakresie dat\n            Sp\u0142aszczanie indeks\u00f3w hierarchicznych (MultiIndex)",
+      "text": "ul {\n    list-style-type: square;\n    -webkit-columns: 2;\n    -moz-columns: 2;\n    columns: 2;\n    list-style-position: inside;\n  }\n\n\n\nLista skrawk\u00f3w\n\n\n\n\n\n  \n    GIT\n  \n\n  \n    Core\n    \n      \n\n    \n            Aktualizacja forka repozytorium\n    \n\n\n  \n\n\n\n\n\n  \n    PostgreSQL\n  \n\n  \n    Core\n    \n      \n\n    \n            Eksport execution plan\n            Znajdywanie i zabijanie kwerend w Postgresie\n    \n\n\n  \n\n\n\n\n\n  \n    Python\n  \n\n  \n    Core\n    \n      \n\n    \n            F-string\n            Listy i s\u0142owniki sk\u0142adane w Pythonie\n    \n\n\n  \n\n  \n    Jupyter\n    \n      \n\n    \n            Instalowanie nowych kerneli dla Jupytera\n    \n\n\n  \n\n  \n    Pandas\n    \n      \n\n    \n            Normalizacja kolumn w Pandas\n            Wy\u015bwietl typ element\u00f3w DataFrame\n            Uzupe\u0142nianie brak\u00f3w w zakresie dat\n            Sp\u0142aszczanie indeks\u00f3w hierarchicznych (MultiIndex)",
       "tags": "",
       "url": "https://pkonarzewski.github.io/"
     },
